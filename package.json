@@ -1,0 +1,24 @@
+{
+  "name": "machinize",
+  "version": "1.0.0",
+  "description": "a javascript library implements finite-state machine for application developement purpose ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barteh/machinize.git"
+  },
+  "keywords": [
+    "fsm",
+    "finit-state-machine",
+    "javascript"
+  ],
+  "author": "Ahad Rafat Talebi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/barteh/machinize/issues"
+  },
+  "homepage": "https://github.com/barteh/machinize#readme"
+}
