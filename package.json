@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/barteh/machinize/issues"
   },
+  "dependencies": {
+    "rxjs": "^5.5.10"
+  },
   "homepage": "https://github.com/barteh/machinize#readme"
 }
