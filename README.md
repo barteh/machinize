@@ -5,7 +5,8 @@
 ```
 npm i @barteh/machinize
 ```
-### use
+---
+### usage
 ```
 import {Machinize} from "@barteh/machinize"
 let machine=Machinize.init({
