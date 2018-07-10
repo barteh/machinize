@@ -1,10 +1,13 @@
 {
   "name": "@barteh/machinize",
-  "version": "1.0.2",
+  "version": "1.0.21",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
+  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"babel src -d dist",
+    "up":"npm publish --access public --scope=barteh"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,8 @@
   "homepage": "https://github.com/barteh/machinize#readme",
   "devDependencies": {
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.7.0"
   }
 }
