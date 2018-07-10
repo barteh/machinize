@@ -1,5 +1,5 @@
 {
-  "name": "machinize",
+  "name": "@barteh/machinize",
   "version": "1.0.0",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
