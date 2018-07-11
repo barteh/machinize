@@ -684,28 +684,28 @@ o["$parameters"]={};
     if (!o.$isRunning) return;
     if(o.$lock)return;
     
-    let notransit = false;
+    let noTransit = false;
 
-    let whilecount = 0;
+    let whileCount = 0;
 
-    while (!notransit && whilecount < 100) {
+    while (!noTransit && whileCount < 100) {
       //for all chain transitions conditions
 
-      whilecount++;
+      whileCount++;
 
-      if (whilecount > 99) {
+      if (whileCount > 99) {
         console.log(`machinize warnning: entrycondition loop over 100 times`);
         break;
       }
 
-      let relatedtransitions = Object.keys(this.transitions).filter(
+      let relatedTransitions = Object.keys(this.transitions).filter(
         j => this.transitions[j].from === o.$state
       );
 
-      if (!relatedtransitions.length) break;
+      if (!relatedTransitions.length) break;
 
-      for (let m = 0; m < relatedtransitions.length; m++) {
-        let tr = this.transitions[relatedtransitions[m]];
+      for (let m = 0; m < relatedTransitions.length; m++) {
+        let tr = this.transitions[relatedTransitions[m]];
        
         if (tr.entryCondition) {
           let fn=tr.entryCondition.bind(o);
@@ -715,10 +715,10 @@ o["$parameters"]={};
             this.transit(tr, o);
             //this[tr.name](o);
           } else {
-            notransit = true;
+            noTransit = true;
           }
         } else {
-          notransit = true;
+          noTransit = true;
         }
       }
     }
