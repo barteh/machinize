@@ -52,7 +52,7 @@ let machine=Machinize.init({
 });
 
 
-const machinInstance= macmachine.createInstance(light:31});
+const machinInstance= macmachine.createInstance({light:31});
 
 machinInstance
 .$Observable
@@ -65,6 +65,20 @@ machineInstance.light=66;
 machineInstance.do_on(); // nothing
 
 ```
+
+
+---
+### test
+```
+npm run test
+``` 
+---
+### build
+
+```
+npm run build
+```
+
 
 
 licence: MIT

@@ -1,11 +1,11 @@
 {
   "name": "@barteh/machinize",
-  "version": "1.0.21",
+  "version": "1.0.212",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
   
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": " npm run build && node ./dist/test",
     "build":"babel src -d dist",
     "up":"npm publish --access public --scope=barteh"
   },
