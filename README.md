@@ -84,5 +84,5 @@ npm run build
 
 
 
-licence: MIT
+License: MIT
 2017
