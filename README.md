@@ -3,6 +3,11 @@
 
 # Machinize
 ## a javascript library implements finite-state machine for application developement purpose
+
+
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Finite_state_machine_example_with_comments.svg/420px-Finite_state_machine_example_with_comments.svg.png)
+
 ---
 ### install
 ```
