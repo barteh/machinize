@@ -15,7 +15,7 @@ npm i @barteh/machinize
 ```
 ---
 ### usage
-```
+```js
 import {Machinize} from "@barteh/machinize"
 let machine=Machinize.init({
     name:"myMachine",
