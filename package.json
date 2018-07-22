@@ -1,13 +1,12 @@
 {
   "name": "@barteh/machinize",
-  "version": "1.0.215",
+  "version": "1.0.3",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
-  
   "scripts": {
-    "test": " npm run build && node ./dist/test",
-    "build":"babel src -d dist",
-    "up":"npm publish --access public --scope=barteh"
+    "test": " npm run build && node ./lib/test",
+    "build": "babel src -d lib",
+    "up": "npm publish --access public --scope=barteh"
   },
   "repository": {
     "type": "git",
@@ -16,7 +15,11 @@
   "keywords": [
     "fsm",
     "finit-state-machine",
-    "javascript"
+    "javascript",
+    "barteh",
+    "برته",
+    "Observable-fsm",
+    "auto-condition-transition-fsm"
   ],
   "author": "Ahad Rafat Talebi",
   "license": "MIT",
@@ -28,9 +31,9 @@
   },
   "homepage": "https://github.com/barteh/machinize/wiki",
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.7.0"
+    "@babel/cli": "^7.0.0-beta.54",
+    "@babel/core": "^7.0.0-beta.54",
+    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54"
   }
 }
