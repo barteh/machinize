@@ -30,7 +30,7 @@ npm i @barteh/machinize
 ---
 ### usage
 ```js
-import {Machinize} from "@barteh/machinize"
+import Machinize from "@barteh/machinize"
 const machine = Machinize.init({
     name: "myMachine",
     data: {

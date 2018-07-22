@@ -7,7 +7,7 @@
 
 import * as Rx from "rxjs";
 
-export class Machinize {
+export default class Machinize {
   static fsmList = {};
   static init(fsm) {
     if (!fsm) return;

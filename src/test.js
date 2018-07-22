@@ -1,4 +1,4 @@
-import {Machinize} from "./machinize";
+import Machinize from "./machinize";
 const machine = Machinize.init({
     name: "myMachine",
     data: {
