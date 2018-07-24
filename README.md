@@ -1,5 +1,5 @@
 
-[![Coverage Status](https://coveralls.io/repos/github/barteh/machinize/badge.svg?branch=master)](https://coveralls.io/github/barteh/machinize?branch=master)
+[![Build Status](https://travis-ci.org/barteh/machinize.svg?branch=master)](https://travis-ci.org/barteh/machinize) [![Coverage Status](https://coveralls.io/repos/github/barteh/machinize/badge.svg?branch=master)](https://coveralls.io/github/barteh/machinize?branch=master)
 
 # Machinize
 ## a javascript library implements finite-state machine for application developement purpose
