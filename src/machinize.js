@@ -111,7 +111,7 @@ export default class Machinize {
 
     fsm["startAll"] = func => {
       let list = func ? fsm.instanceList.filter(func) : fsm.instanceList;
-      for (let i = 0; i < fsm.instanceList.length; i++) {
+      for (let i = 0; i < list.length; i++) {
         fsm.instanceList[i].start();
       }
     };
@@ -181,8 +181,8 @@ export default class Machinize {
 
       if (this.states[s].start === true) this.state = this.states[s];
 
-      this.states[s].whenEnter = new Promise((res, rej) => {});
-      this.states[s].whenExit = new Promise((res, rej) => {});
+      this.states[s].whenEnter = new Promise((/*res, rej*/) => {});
+      this.states[s].whenExit = new Promise((/*res, rej*/) => {});
     }
 
     this.computed = fsm.computed;
@@ -265,12 +265,12 @@ export default class Machinize {
 
     this.state = this.state || this.states[Object.keys(this.states)[0]];
 
-    let feedback = {
-      result: true,
-      code: 0,
-      message: "",
-      state: this.state.name
-    };
+    // let feedback = {
+    //   result: true,
+    //   code: 0,
+    //   message: "",
+    //   state: this.state.name
+    // };
 
     fsm["$machine"] = this;
 
@@ -411,7 +411,7 @@ export default class Machinize {
     return this._tHash[`${from}_${to}`] !== undefined;
   }
 
-  is(s) {
+  isInState(s) {
     return this.state.name === s;
   }
 
@@ -539,7 +539,7 @@ o["$parameters"]={};
         Object.defineProperty(o, cmp, {
           configurable: true,
           get: () => {
-            if (!o.$isRunning) return;
+            if (!o.$isRunning) return null;
             
             try {
               return o.$fsm.computed[cmp].call(o);
@@ -548,8 +548,10 @@ o["$parameters"]={};
                 `barteh machinize fsm error: computed cant resolve  ${cmp} -> ${
                   e.message
                 }`
+                
               );
             }
+            return null;
           },
           enumerable: true
         });
@@ -560,7 +562,7 @@ o["$parameters"]={};
 
     /// using $observable({from:'',to:''})
     ///using $observable('sSaved')
-    o["$observable"] = (st, fromst) => {
+    o["$observable"] = (st/*, fromst*/) => {
       let from = undefined;
       let to = undefined;
 
@@ -624,13 +626,15 @@ o["$parameters"]={};
       return ret;
     };
 
-    let feedback = {
-      result: true,
-      code: 0,
-      message: "",
-      target: pro,
-      to: this.state
-    };
+    // let feedback = {
+    //   result: true,
+    //   code: 0,
+    //   message: "",
+    //   target: pro,
+    //   to: this.state
+    // };
+
+    
     //o.$_observable.next(feedback);
 
     //Object.seal(o);

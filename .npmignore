@@ -1,2 +1,7 @@
 src
 .git
+.eslint
+.eslintignore
+.coverall.yml
+.babelrc
+.travis.yml

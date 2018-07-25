@@ -3,8 +3,9 @@
  * Borna Mehr Fann co.
  * Ahad Rafat talebi
  * 2017 * version 1.0.0
+* not used
  */
-
+/*
 import * as Rx from "rxjs";
 
 export class Machinize {
@@ -688,3 +689,4 @@ export class Machinize {
     }
   }
 }
+*/

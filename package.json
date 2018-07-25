@@ -1,12 +1,13 @@
 {
   "name": "@barteh/machinize",
-  "version": "1.0.302",
+  "version": "1.0.31",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
   "scripts": {
     "test": " npm run build && node ./lib/test",
-    "build": "babel src -d lib && babel index.d.js -o index.js",
-    "up": "npm publish --access public --scope=barteh"
+    "build": "npm run lint && babel src -d lib && babel index.d.js -o index.js",
+    "up": "npm publish --access public --scope=barteh",
+    "lint": "./node_modules/.bin/eslint src/**/*.js && echo \"eslint code is ok\""
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,9 @@
     "@babel/cli": "^7.0.0-beta.54",
     "@babel/core": "^7.0.0-beta.54",
     "@babel/preset-env": "^7.0.0-beta.54",
-    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54"
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
+    "babel-eslint": "^8.2.6",
+    "eslint": "^5.2.0",
+    "eslint-plugin-react": "^7.10.0"
   }
 }

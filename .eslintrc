@@ -1,0 +1,27 @@
+{
+  "parser": "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": "warn",
+
+    "react/display-name": [2],
+    "max-len": [1, 190, 2, {
+      "ignoreComments": true
+    }],
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ]
+}
