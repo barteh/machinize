@@ -7,7 +7,7 @@
 
 import * as Rx from "rxjs";
 
-export default class Machinize {
+export  class Machinize {
   static fsmList = {};
   static init(fsm) {
     if (!fsm) return;
@@ -729,3 +729,4 @@ o["$parameters"]={};
   }
 }
 
+export default Machinize;
