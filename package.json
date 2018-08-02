@@ -1,6 +1,6 @@
 {
   "name": "@barteh/machinize",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
   "scripts": {
@@ -14,8 +14,9 @@
     "url": "git+https://github.com/barteh/machinize.git"
   },
   "keywords": [
+    "machinize",
     "fsm",
-    "finit-state-machine",
+    "finite-state-machine",
     "javascript",
     "barteh",
     "برته",
