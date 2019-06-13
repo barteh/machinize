@@ -1,6 +1,6 @@
 {
   "name": "@barteh/machinize",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
   "scripts": {
@@ -33,9 +33,9 @@
   },
   "homepage": "https://github.com/barteh/machinize/wiki",
   "devDependencies": {
-    "@babel/cli": "^7.0.0-beta.54",
-    "@babel/core": "^7.0.0-beta.54",
-    "@babel/preset-env": "^7.0.0-beta.54",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0-beta.54",
     "babel-eslint": "^8.2.6",
     "eslint": "^5.2.0",
