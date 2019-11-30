@@ -1,6 +1,6 @@
-{
+﻿{
   "name": "@barteh/machinize",
-  "version": "1.0.37",
+  "version": "1.0.38",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
   "scripts": {
