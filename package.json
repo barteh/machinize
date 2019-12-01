@@ -1,6 +1,6 @@
-﻿{
+{
   "name": "@barteh/machinize",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "description": "a javascript library implements finite-state machine for application developement purpose ",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "url": "https://github.com/barteh/machinize/issues"
   },
   "dependencies": {
+    "npm": "^6.13.1",
     "rxjs": "^5.5.10"
   },
   "homepage": "https://github.com/barteh/machinize/wiki",
